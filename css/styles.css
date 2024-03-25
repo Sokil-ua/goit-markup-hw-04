@@ -165,7 +165,7 @@ img {
 }
 
 .header-contacts {
-  
+
   display: flex;
   align-items: center;
   gap: 10px;
@@ -184,13 +184,13 @@ img {
 }
 
 .email {
-width: 16px;
-height: 12px;
+  width: 16px;
+  height: 12px;
 }
 
 .phone {
-width: 10px;
-height: 16px;
+  width: 10px;
+  height: 16px;
 }
 
 
@@ -235,13 +235,16 @@ height: 16px;
 
 .button {
   display: inline-block;
-
   cursor: pointer;
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 4px;
-
 }
+
+/* .button:hover, .button:focus {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+  background: #2196f3;
+} */
 
 .button.primary {
   color: var(--primary-white-color);
@@ -305,9 +308,10 @@ height: 16px;
 }
 
 .work-icon {
-width: 70px;
-height: 70px;
+  width: 70px;
+  height: 70px;
 }
+
 /* -------------- Чим ми займаємося --------------  */
 .list .img-list:not(:last-child) {
   margin-right: 30px;
@@ -436,6 +440,11 @@ height: 70px;
   margin-right: 8px;
 }
 
+.list-button:hover, 
+.list-button:focus {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+  background: #2196f3;
+}
 
 .button.secondary {
   padding: 6px 22px;
@@ -485,6 +494,11 @@ height: 70px;
   text-decoration: none;
 }
 
+.project-link:hover {
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+
 .project-title {
   margin-bottom: 4px;
 
@@ -502,66 +516,6 @@ height: 70px;
   letter-spacing: 0.03em;
 }
 
-/* -------------- Social --------------  */
-.social-container {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-}
-
-.social-container-team {
-  margin-top: 16px;
-}
-
-.social-container-footer {
-  margin-top: 20px;
-}
-
-.social-item {
-  width: 44px;
-  height: 44px;
-
-
-}
-
-
-.social-link {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  color: #AFB1B8;
-}
-
-.social-link-footer {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  color: #ffffff;
-  background-color: #444444;
-}
-
-.social-link:hover,
-.social-link:focus {
-  background-color: #2196F3;
-  color: #ffffff;
-}
-
-
-.social-link-footer:hover,
-.social-link-footer:focus {
-  background-color: #2196F3;
-}
-.social-icon {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-}
 
 
 /* -------------- Footer --------------  */
@@ -604,5 +558,74 @@ height: 70px;
 
 .footer-social {
   margin-left: 70px;
-
 }
+
+.footer-text {
+  color: #ffffff;
+}
+
+/* -------------- Social --------------  */
+
+.social-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.social-container-team {
+  margin-top: 16px;
+}
+
+.social-container-footer {
+  margin-top: 20px;
+}
+
+.social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #AFB1B8;
+}
+
+.social-link-footer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #444444;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: #2196F3;
+  color: #ffffff;
+}
+
+
+.social-link-footer:hover,
+.social-link-footer:focus {
+  background-color: #2196F3;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* .footer-social-icon {
+  width: 20px;
+  height: 20px;
+  fill: rgba(255, 255, 255, 0.1);
+} */
